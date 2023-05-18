@@ -29,9 +29,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
-# Parts
+
+# RRO Overlays
 PRODUCT_PACKAGES += \
-    GoogleParts
+    GoogleParts \
+    EuiccSupportPixelOverlay \
+    NowPlayingOverlay
 
 # Touch
 include hardware/google/pixel/touch/device.mk
