@@ -14,7 +14,7 @@ PRODUCT_COPY_FILES += \
 # AiAi Config
 PRODUCT_COPY_FILES += \
     device/google/gs101/allowlist_com.google.android.as.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.google.android.as.xml
-    
+
 # Quick Tap
 PRODUCT_COPY_FILES += \
     device/google/gs201/conf/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
@@ -28,9 +28,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
-
-# Lineage Health
-include hardware/google/pixel/lineage_health/device.mk
 
 # Parts
 PRODUCT_PACKAGES += \
