@@ -5,7 +5,7 @@
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/google/gs201/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += device/google/gs201/overlay-ancient
 
 # Adaptive charging
 PRODUCT_COPY_FILES += \
@@ -13,7 +13,7 @@ PRODUCT_COPY_FILES += \
 
 # AiAi Config
 PRODUCT_COPY_FILES += \
-    device/google/gs101/allowlist_com.google.android.as.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.google.android.as.xml
+    device/google/gs201/allowlist_com.google.android.as.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.google.android.as.xml
 
 # Quick Tap
 PRODUCT_COPY_FILES += \
@@ -28,7 +28,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
-
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
